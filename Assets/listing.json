@@ -1,0 +1,43 @@
+{
+  "name": "Marble",
+  "tagline": "A photo filter on the GPU, sepia first.",
+  "category": "graphics",
+  "keywords": [
+    "photo",
+    "image",
+    "filter",
+    "sepia",
+    "gpu",
+    "metal"
+  ],
+  "platforms": [
+    "macOS 14"
+  ],
+  "license": "MIT",
+  "fields": [
+    {
+      "name": "path",
+      "type": "string",
+      "required": true,
+      "note": "the photo to filter, relative to the project"
+    },
+    {
+      "name": "filter",
+      "type": "sepia",
+      "required": false,
+      "note": "the look; sepia when left out"
+    },
+    {
+      "name": "intensity",
+      "type": "number",
+      "required": false,
+      "note": "how strong, from 0 to 1; 1 when left out"
+    },
+    {
+      "name": "output",
+      "type": "string",
+      "required": false,
+      "note": "where to write the result; beside the photo, named for the look, when left out"
+    }
+  ]
+}
